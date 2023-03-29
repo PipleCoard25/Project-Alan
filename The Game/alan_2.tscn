@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://djbkm0a02c33s"]
+
+[ext_resource type="Script" path="res://alan_2.gd" id="1_taqn3"]
+[ext_resource type="Texture2D" uid="uid://ddewug6emcb2" path="res://Assets/MC-run-Sheet.png" id="1_w3mbk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p82d7"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(0, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txsg8"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(124, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0r3j"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(248, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkxlm"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(496, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dmja"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(744, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13urf"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(868, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pgy5"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(620, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgxgi"]
+atlas = ExtResource("1_w3mbk")
+region = Rect2(372, 0, 124, 142)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nhfso"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p82d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txsg8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0r3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkxlm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dmja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13urf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pgy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgxgi")
+}],
+"loop": true,
+"name": &"up",
+"speed": 120.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Alan 2" type="Area2D"]
+script = ExtResource("1_taqn3")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nhfso")
+animation = &"up"
+frame_progress = 0.01852
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

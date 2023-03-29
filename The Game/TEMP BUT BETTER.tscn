@@ -1,0 +1,84 @@
+[gd_scene load_steps=12 format=3 uid="uid://bxho35etvknej"]
+
+[ext_resource type="Texture2D" uid="uid://ddewug6emcb2" path="res://Assets/MC-run-Sheet.png" id="1_ss1x3"]
+[ext_resource type="Texture2D" uid="uid://of8lp178k4xo" path="res://Assets/platform grass.png" id="2_isvut"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54lpf"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(0, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eunh"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(124, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87xvf"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(248, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68wex"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(372, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25dwe"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(496, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu4wl"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(620, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v58pt"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(744, 0, 124, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrmbs"]
+atlas = ExtResource("1_ss1x3")
+region = Rect2(868, 0, 124, 142)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0a0ii"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54lpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eunh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87xvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68wex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25dwe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu4wl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v58pt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrmbs")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="TEMP BUT BETTER" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0a0ii")
+animation = &"new_animation"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570, 567)
+scale = Vector2(1.4475, 1)
+texture = ExtResource("2_isvut")
