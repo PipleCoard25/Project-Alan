@@ -1,10 +1,11 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680116260
-alan_2.tscn::PackedScene::7793655935286010010::1680115520::0::1::::<><>::uid://ddewug6emcb2
+::res://::1681326293
+alan_2.gd::GDScript::-1::1681325604::0::1::::<>Area2D<>::
+alan_2.tscn::PackedScene::7793655935286010010::1681325696::0::1::::<><>::res://alan_2.gd<>uid://ddewug6emcb2
 default_env.tres::Environment::-1::1679511335::0::1::::<><>::
 icon.png::CompressedTexture2D::1467542786738076103::1679511335::1679511443::1::::<><>::
-TEMP BUT BETTER.tscn::PackedScene::4016116354545798213::1680115529::0::1::::<><>::uid://ddewug6emcb2<>uid://of8lp178k4xo
-Temp.tscn::PackedScene::5552032094610098723::1680115533::0::1::::<><>::uid://p2u3a72ycx8y<>uid://dgvn3t1f1djdi<>uid://co82hsibnorrx
+TEMP BUT BETTER.tscn::PackedScene::4016116354545798213::1681325697::0::1::::<><>::uid://ddewug6emcb2<>uid://of8lp178k4xo
+Temp.tscn::PackedScene::5552032094610098723::1681325696::0::1::::<><>::uid://p2u3a72ycx8y<>uid://dgvn3t1f1djdi<>uid://co82hsibnorrx
 ::res://Assets/::1679512273
 base.png::CompressedTexture2D::7624587407248671722::1679511335::1679511443::1::::<><>::
 MC-base.png::CompressedTexture2D::5825262461406773117::1679511335::1679511443::1::::<><>::
